@@ -14,3 +14,14 @@ $secureLinks.attr('target', '_blank');
 
 // Add download attribute, Now our file will be downloaded instead of opening in the browser. Adding download attribute is bit tricky because it doesn't need any value. 
 $pdfs.attr('download', true);
+
+// $odd.css('backgroundColor', 'lightgrey');
+
+// Adding CSS classes to our Elements
+
+// $odd.css('backgroundColor', 'lightgrey');
+
+$secureLinks.addClass('secure');
+
+$pdfs.addClass('pdf');
+
