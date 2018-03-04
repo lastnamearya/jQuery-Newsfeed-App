@@ -25,3 +25,20 @@ $secureLinks.addClass('secure');
 
 $pdfs.addClass('pdf');
 
+$pdfs.on('click', function(event){
+  // Check if checkbox has been checked
+  // if zero checkboxes are checked
+    if($(':checked').length === 0){
+      event.preventDefault();
+      alert('Please check the box to allow PDF Downloads!');
+    }
+    // prevent download of document
+    // alert the user
+  // else allow the download
+  
+  // We use it most of the time with forms because it prevent the form from submitting. By default browser will take whatever in the form and send it to the server, this cause the page to reload. When we use this then we call Hey browser, when the form is submitted don't send the info to the server. This prevents browser from reloading the page. 
+
+  // Second is, it will prevent browser automatically following a link after the user clicks on it. 
+  // event.preventDefault();
+  
+});
