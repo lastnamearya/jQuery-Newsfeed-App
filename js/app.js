@@ -48,3 +48,20 @@ $pdfs.on('click', function(event){
 const $pdfCheckbox = $('<label><input type="checkbox"> Allow PDF downloads</label>');
 
 $('#links').append($pdfCheckbox);
+
+// .each() method, it takes two parameter which are optional
+$('a').each(function(index, element){
+  console.log(index, $(element).attr('href'));
+});
+
+// // Appending URLs next to the links
+// $('a').each(function(index, link){
+//   const url = $(link).attr('href');
+//   $(link).parent().append(`${url}`);
+// }) 
+
+// // Above code using "this" keyword
+// $('a').each(function(){
+//   const url = $(this).attr('href');
+//   $(this).parent().append(`${url}`);
+// });
