@@ -1,3 +1,5 @@
+const $pdfCheckbox = $('<label><input type="checkbox"> Allow PDF downloads</label>');
+
 // jQuery Specific selector to slect odd element nodes
 const $odd = $('a:odd')
 
@@ -44,8 +46,6 @@ $pdfs.on('click', function(event){
 });
 
 // Now let's make our javascript unobtrusive
-
-const $pdfCheckbox = $('<label><input type="checkbox"> Allow PDF downloads</label>');
 
 $('#links').append($pdfCheckbox);
 
