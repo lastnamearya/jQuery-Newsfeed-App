@@ -42,3 +42,9 @@ $pdfs.on('click', function(event){
   // event.preventDefault();
   
 });
+
+// Now let's make our javascript unobtrusive
+
+const $pdfCheckbox = $('<label><input type="checkbox"> Allow PDF downloads</label>');
+
+$('#links').append($pdfCheckbox);
