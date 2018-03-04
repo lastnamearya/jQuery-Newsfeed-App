@@ -45,9 +45,9 @@ $pdfs.on('click', function(event){
   
 });
 
-// Now let's make our javascript unobtrusive
+// // Now let's make our javascript unobtrusive
 
-$('#links').append($pdfCheckbox);
+// $('#links').append($pdfCheckbox);
 
 // .each() method, it takes two parameter which are optional
 $('a').each(function(index, element){
